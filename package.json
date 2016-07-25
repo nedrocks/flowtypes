@@ -1,6 +1,6 @@
 {
   "name": "flowtypes",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A collection of flow types I've built by hand or (where noted) gathered from around the web.",
   "main": "index.js",
   "scripts": {

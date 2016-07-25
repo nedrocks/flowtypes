@@ -9,7 +9,7 @@
  * @flow
  */
 
-import type {
+export type {
   AWSAmazonCognitoIdentity,
   AWSLambdaContext,
   AWSMobileSDKClient,
@@ -17,7 +17,7 @@ import type {
   AWSMobileSDKClientEnv,
 } from './typedefs/aws/lambda-types';
 
-import type {
+export type {
   ASKIntentObject,
   ASKIntentRequest,
   ASKLaunchRequest,
@@ -35,6 +35,7 @@ import type {
   ASKOutputSpeechSSMLMarkup,
   ASKOutputSpeechType,
   ASKRequestBody,
+  ASKRequestObject,
   ASKRequestTypeIntentRequest,
   ASKRequestTypeLaunchRequest,
   ASKRequestTypeSessionEndedRequest,
@@ -47,43 +48,3 @@ import type {
   ASKSessionEndedRequest,
   ASKSessionUserContainer,
 } from './typedefs/aws/ask-types';
-
-
-export type {
-  AWSAmazonCognitoIdentity,
-  AWSLambdaContext,
-  AWSMobileSDKClient,
-  AWSMobileSDKClientContext,
-  AWSMobileSDKClientEnv,
-};
-
-export type {
-  ASKIntentObject,
-  ASKIntentRequest,
-  ASKLaunchRequest,
-  ASKOutputCard,
-  ASKOutputCardImageField,
-  ASKOutputCardLinkAccount,
-  ASKOutputCardLinkAccountType,
-  ASKOutputCardSimple,
-  ASKOutputCardSimpleType,
-  ASKOutputCardStandard,
-  ASKOutputCardStandardType,
-  ASKOutputSpeech,
-  ASKOutputSpeechPlainText,
-  ASKOutputSpeechSSML,
-  ASKOutputSpeechSSMLMarkup,
-  ASKOutputSpeechType,
-  ASKRequestBody,
-  ASKRequestTypeIntentRequest,
-  ASKRequestTypeLaunchRequest,
-  ASKRequestTypeSessionEndedRequest,
-  ASKResponseBody,
-  ASKResponseObject,
-  ASKResponseReprompt,
-  ASKSession,
-  ASKSessionApplicationContainer,
-  ASKSessionEndedReason,
-  ASKSessionEndedRequest,
-  ASKSessionUserContainer,
-};

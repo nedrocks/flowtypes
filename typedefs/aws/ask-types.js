@@ -63,10 +63,12 @@ export type ASKSession = {
   user: ASKSessionUserContainer
 };
 
-export type ASKRequestBody = {
+export type ASKRequestBody = ASKLaunchRequest | ASKIntentRequest | ASKSessionEndedRequest;
+
+export type ASKRequestObject = {
   version: string,
   session: ASKSession,
-  request: Object
+  request: ASKRequestBody
 };
 
 export type ASKOutputSpeechPlainText = {
@@ -111,15 +113,15 @@ export type ASKResponseReprompt = {
   outputSpeech: ?ASKOutputSpeech,
 };
 
-export type ASKResponseObject = {
+export type ASKResponseBody = {
   outputSpeech: ?ASKOutputSpeech,
   card: ?ASKOutputCard,
   reprompt: ?ASKResponseReprompt,
   shouldEndSession: boolean
 }
 
-export type ASKResponseBody = {
+export type ASKResponseObject = {
   version: string,
   sessionAttributes: ?Object,
-  response: ASKResponseObject,
+  response: ASKResponseBody,
 }
