@@ -1,0 +1,30 @@
+{
+  "name": "flowtypes",
+  "version": "0.0.0",
+  "description": "A collection of flow types I've built by hand or (where noted) gathered from around the web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nedrocks/flowtypes.git"
+  },
+  "keywords": [
+    "flow",
+    "types",
+    "flowtypes"
+  ],
+  "author": "Ned Rockson <nedrocks@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nedrocks/flowtypes/issues"
+  },
+  "homepage": "https://github.com/nedrocks/flowtypes#readme",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-plugin-syntax-flow": "^6.8.0",
+    "babel-plugin-transform-flow-strip-types": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0"
+  }
+}
